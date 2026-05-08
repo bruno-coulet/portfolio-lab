@@ -4,123 +4,115 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lab — IA · POCs</title>
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#7dd3fc;--muted:#9aa4b2;color-scheme:dark}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef6;background:linear-gradient(180deg,#071026 0%, #071221 60%)}
-    .wrap{max-width:920px;margin:48px auto;padding:28px}
-    header{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
-    .header{display:block;margin:0 auto}
-    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b}
-    h1{margin:0;font-size:1.5rem}
-    p.lead{margin:8px 0 20px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-    .card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);Padding:18px;border-radius:10px}
-    .card h3{margin:0 0 6px;font-size:1.05rem}
-    .card p{margin:0 0 12px;color:var(--muted);font-size:0.95rem}
-    a.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#04263b;text-decoration:none;font-weight:600}
-    footer{margin-top:26px;color:var(--muted);font-size:0.9rem}
-    .small{font-size:0.85rem;color:var(--muted)}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <!-- <div class="logo">ZC</div> -->
-      <img class="header" src="dresseur.png" alt="Dresseur de serveurs" />
-      <div>
-        <h1>Lab — IA</h1>
-        <p class="lead">Laboratoire de POCs IA & Data — Bruno, étudiant en Data science en alternance à la RTM.</p>
-      </div>
+      <h1>Lab — IA</h1>
+      <img src="dresseur.png" alt="Dresseur de serveurs" class="header hero-image">
+      <!-- <p class="lead">Espace d'expérimentation et déploiement de modèles d'Intelligence Artificielle.</p> -->
+      <h2 id="objectif-title" class="section-title">Espace d'expérimentation et déploiement de modèles d'Intelligence Artificielle.</h2>
     </header>
 
+  <main>
+
     <section aria-labelledby="objectif-title">
-      <h2 id="objectif-title" style="margin-top:22px">Espace de test de déploiement et accessoirement de démonstration</h2>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
+      <p class="section-copy">
         Les projets présentés ici sont issus de travaux en équipe de 2 ou 3 personnes, réalisés dans le cadre de mon <a href="https://laplateforme.io/bachelor-it/developpeur-en-intelligence-artificielle/" target="_blank" rel="noopener">Bachelor développeur en Intelligence Artificielle</a> à La Plateforme.
       </p>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
-        Ils sont à l'origine à but pédagogique, répondent à des consignes précises, mais ne sont pas pensés pour être déployés.
+      <p class="section-copy">
+      Ils répondent à des consignes précises à but pédagogique, mais ne sont pas forcément pensés pour être déployés.
       </p>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
-        Depuis le début de ma formation, nous avons principalement travaillé :
+      <p class="section-copy">
+        Depuis le début de la formation, nous avons principalement travaillé :
       </p>
       <ul>
         <li>l'analyse de données</li>
         <li>la data science</li>
         <li>le machine learning</li>
       </ul>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">  
-        <strong>Le présent VPS est l'occasion de développer aussi des compétences en déploiement.</strong><br>
-        Il me permet de partager mes expérimentations, d'exposer des Proofs of Concept et de documenter mes apprentissages dans ces domaines.
+      <p class="section-copy">
+        <strong>Le présent serveur (VPS) vise à développer des compétences en déploiement.</strong><br>
+        Il me permet d'exposer des Proofs of Concept et d'échanger avec qui veut pour apréhender les aspects techniques liés au déploiement de projets IA, tout en valorisant les travaux réalisés durant la formation.
       </p>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
+      <p class="section-copy">
         Sentez-vous libre de parcourir les projets présentés ici, de les tester et <a href="mailto:bruno.coulet@laplateforme.io">de me faire part de vos retours</a> !
       </p>
 
-
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
+      <!-- <p class="section-copy">
         <strong>Je cherche une structure pour un contrat de professionnalisation en alternance.</strong><br>
         Dans le cadre d'un <a href="https://laplateforme.io/mastere/intelligence-artificielle/" target="_blank" rel="noopener">Master en Intelligence Artificielle</a>.<br>
         À partir de septembre 2026 dans la région de Marseille.<br>
         <strong>Rythme d'alternance : 4 semaines sur 5 en entreprise.</strong>
-      </p>
+      </p> -->
+
+      <div class="alternance-banner">
+        <img src="megaphone.png" alt="Annonce importante" class="megaphone-icon">
+        <div class="alternance-text">
+          <p class="section-copy">
+            <strong>Je cherche une structure pour un contrat de professionnalisation en alternance.</strong><br>
+            Dans le cadre d'un <a href="https://laplateforme.io/mastere/intelligence-artificielle/" target="_blank" rel="noopener">Master en Intelligence Artificielle</a>.<br>
+            À partir de septembre 2026 dans la région de Marseille.<br>
+            <strong>Rythme d'alternance : 4 semaines sur 5 en entreprise.</strong>
+          </p>
+        </div>
+      </div>
+
     </section>
 
+
     <section aria-labelledby="pocs">
-      <h2 id="pocs" style="margin-top:22px">Proofs of Concept</h2>
-      <div class="grid" style="margin-top:12px">
+      <h2 id="pocs">Proofs of Concept</h2>
+      <div class="grid">
         <article class="card">
-          <h3>Apartment Hunter (Streamlit)</h3>
-          <p>Interface de recherche et visualisation pour annonces immobilières (Madrid).</p>
-          <a class="btn" href="https://lab.zanza-creation.com/apartment/" target="_blank" rel="noopener">Ouvrir</a>
+          <h3>Apartment Hunter</h3>
+          <p>Système de prédiction de prix immobiliers à Madrid basé sur XGBoost. L'utilisateur renseigne les caractéristiques du bien et l'API retourne une estimation de prix en temps réel.<br>
+          Ce projet a été réalisé en équipe avec Sulivan Moreau et Victor Duwat</p>
+          
+          <div class="btn-group">
+            <a class="btn" href="https://lab.zanza-creation.com/apartment/" target="_blank" rel="noopener">Interface utilisateur</a>
+            <a class="btn secondary" href="https://lab.zanza-creation.com/api/docs" target="_blank" rel="noopener">Docs API Backend</a>
+            <a class="btn outline" href="https://canva.link/pdbzdiv2ly69l4w" target="_blank" rel="noopener">Slides Soutenance</a>
+          </div>
+
+          <p class="small project-note">
+            <em>Note : Les slides accompagnent la soutenance orale.</em>
+          </p>
         </article>
 
-        <article class="card">
-          <h3>API Backend (FastAPI)</h3>
-          <p>API REST pour le POC. La documentation Swagger est exposée ici (peut nécessiter un correctif de `root_path`).</p>
-          <a class="btn" href="https://lab.zanza-creation.com/api/docs" target="_blank" rel="noopener">Docs API</a>
-        </article>
-
-        <article class="card">
-          <h3>Autres POCs à venir</h3>
-          <p class="small">D'autres projets seront déployés prochainement. Ex: Spark jobs, notebooks, microservices.</p>
+        <article class="card card-centered card-muted">
+          <h3>Projets à venir</h3>
+          <p>Recommandations avec pySpark<br>analyses NLP<br>classification d'images...<br>... en cours de préparation.</p>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="tech-title">
-      <h2 id="tech-title" style="margin-top:22px">Tech Stack</h2>
-      <p style="margin-top:12px;color:var(--muted);font-size:0.95rem">
-        Les projets présentés ici sont réalisés avec les outils et bibliothèques suivants :
-      </p>  
-      <ul>
-        <li>Exploration de datasets
-          <ul>
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Stack Technique</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Data Science</h3>
+          <ul class="small">
             <li>Notebooks Jupyter</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Plotly</li>
+            <li>Pandas, Matplotlib, Seaborn, Plotly</li>
+            <li>Scikit-learn, XGBoost, TensorFlow</li>
           </ul>
-        </li>
-        <li>GitHub pour la documentation et le partage de code</li>
-        <li>Modélisation
-          <ul>
-            <li>Scikit-learn</li>
-            <li>XGBoost</li>
-            <li>TensorFlow</li>
+        </div>
+        <div class="card">
+          <h3>Déploiement & Ops</h3>
+          <ul class="small">
+            <li>Docker & Docker Compose</li>
+            <li>FastAPI (Backend)</li>
+            <li>Streamlit (Frontend IA)</li>
+            <li>Nginx & Traefik</li>
           </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>Streamlit pour les interfaces web</li>
-        <li>FastAPI pour les APIs backend</li>
-        <li>Docker pour la containerisation</li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <section aria-labelledby="liens-title">
-      <h2 id="liens-title" style="margin-top:22px">Liens</h2>
+      <h2 id="liens-title" class="section-title">Retrouvez-moi sur :</h2>
       <ul>
         <li><a href="https://www.linkedin.com/in/bruno-coulet" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://github.com/bruno-coulet" target="_blank" rel="noopener">GitHub</a></li>
@@ -129,12 +121,14 @@
       </ul>
     </section>
 
-
-
     <footer>
-      <p>Envie d'en voir plus ? Passez par la boutique :</p>
-      <p><a class="btn" href="https://zanza-creation.com" target="_blank" rel="noopener">zanza-creation.com — Exit through the gift shop</a></p>
+      <p>Envie d'en voir plus ?<br>Exit through the gift shop !</p>
+      <p><a class="btn" href="https://zanza-creation.com" target="_blank" rel="noopener">zanza-creation.com</a></p>
     </footer>
+
+  </main>
+
   </div>
+
 </body>
 </html>
