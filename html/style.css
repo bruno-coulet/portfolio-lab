@@ -1,7 +1,13 @@
+/*
+:root   pseudo-classe qui cible l'élément le plus haut de la page, la balise <html>
+        -- définit une "propriété personnalisée" (nom des variables en CSS).
+        Déclarer des variables à l'intérieur de :root les rend globales
+*/
 :root {
   --bg: #0f1724;
   --card: #0b1220;
   --accent: #7dd3fc;
+  --highlight: #fcca7d;
   --muted: #9aa4b2;
   color-scheme: dark;
 }
@@ -65,23 +71,22 @@ p.section-copy {
 }
 
 
-/* --- LIENS TEXTES (UX HARMONISÉE) --- */
+/* --- LIENS TEXTES --- */
 
-/* 1. On définit le style de base pour tous les liens qui n'ont pas la classe .btn */
+/* Style de base pour tous les liens qui n'ont pas la classe .btn */
 a:not(.btn) {
   color: var(--accent);
   text-decoration: none;
   transition: all 0.2s ease;
   position: relative;
-  display: inline-block; /* Crucial pour que le positionnement du trait fonctionne bien */
+  display: inline-block; /* Pour que le positionnement du trait fonctionne bien */
 }
 
-/* 2. Lueur au survol */
 a:not(.btn):hover {
   text-shadow: 0 0 8px rgba(125, 211, 252, 0.4);
 }
 
-/* 3. Création du trait de soulignement (Le fameux trait manquant) */
+/* Trait de soulignement */
 a:not(.btn)::after {
   content: '';
   position: absolute;
@@ -95,7 +100,7 @@ a:not(.btn)::after {
   transition: transform 0.3s ease-out;
 }
 
-/* 4. Animation du trait au survol */
+/* Animation du trait */
 a:not(.btn):hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -154,10 +159,12 @@ a:not(.btn):hover::after {
   border-color: rgba(125, 211, 252, 0.4);
 }
 
-.card h3 {
+.card.poc h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: var(--accent);
+  /* color: var(--accent); */
+  /* color: #fcca7d; */
+  color: var(--highlight);
 }
 
 .card p {
@@ -178,7 +185,7 @@ a:not(.btn):hover::after {
   opacity: 0.7;
 }
 
-/* --- BOUTONS (UX) --- */
+/* --- BOUTONS --- */
 .btn-group {
   display: flex;
   gap: 10px;
@@ -200,7 +207,7 @@ a.btn {
   cursor: pointer;
 }
 
-/* On désactive les effets de texte des liens standards pour les boutons */
+/* Désactive les effets de texte des liens standards pour les boutons */
 a.btn:hover {
   text-shadow: none !important;
   color: #04263b !important;

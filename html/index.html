@@ -44,28 +44,66 @@
     <section aria-labelledby="pocs">
       <h2 id="pocs">Proofs of Concept</h2>
       <div class="grid">
-        <article class="card">
+
+        <!-- Prédiction de prix immobiliers DEBUT -->
+        <article class="card poc">
           <h3>Prédiction de prix immobiliers</h3>
           <h4>Basé sur un jeu de donnés de bien situés à Madrid.</h4>
           <p>
             Nettoyage et EDA avec Pandas et Matplotlib.<br>
             Modelisation avec Scikit-learn.<br>
             Déploiement avec FastAPI et Streamlit.</p>
-          <p>L'utilisateur renseigne les caractéristiques du bien et l'API retourne une estimation de prix en temps réel.</p>
-          <p>Ce projet a été réalisé en équipe avec <a href="https://www.linkedin.com/in/sulivan-moreau/" target="_blank" rel="noopener noreferrer">Sulivan Moreau</a> et <a href="https://www.linkedin.com/in/victor-duwat-9112b8298/" target="_blank" rel="noopener noreferrer">Victor Duwat</a>.</p>
-          
-          <div class="btn-group">
-            <a class="btn" href="https://lab.zanza-creation.com/apartment/" target="_blank" rel="noopener">Interface utilisateur</a>
-            <a class="btn secondary" href="https://lab.zanza-creation.com/api/docs" target="_blank" rel="noopener">Docs API Backend</a>
-            <a class="btn outline" href="https://canva.link/pdbzdiv2ly69l4w" target="_blank" rel="noopener">Slides Soutenance</a>
-          </div>
+            <p>L'utilisateur renseigne les caractéristiques du bien et l'API retourne une estimation de prix en temps réel.</p>
+            <p>Ce projet a été réalisé en équipe avec <a href="https://www.linkedin.com/in/sulivan-moreau/" target="_blank" rel="noopener noreferrer">Sulivan Moreau</a> et <a href="https://www.linkedin.com/in/victor-duwat-9112b8298/" target="_blank" rel="noopener noreferrer">Victor Duwat</a>.</p>
+            
+            <div class="btn-group">
+              <a class="btn" href="https://lab.zanza-creation.com/apartment-hunter/" target="_blank" rel="noopener">Interface utilisateur</a>
+              <a class="btn secondary" href="https://lab.zanza-creation.com/apartment-hunter/api/docs" target="_blank" rel="noopener">Docs API Backend</a>
+              <a class="btn secondary" href="https://github.com/bruno-coulet/apartment-hunter" target="_blank" rel="noopener">Code Source</a>
+              <a class="btn outline" href="https://canva.link/pdbzdiv2ly69l4w" target="_blank" rel="noopener">Slides Soutenance</a>
+            </div>
+            
+            <p class="small project-note">
+              <em>Note : Les slides accompagnent la soutenance orale.</em>
+            </p>
+          </article>
+          <!-- Prédiction de prix immobiliers FIN -->
 
-          <p class="small project-note">
-            <em>Note : Les slides accompagnent la soutenance orale.</em>
+        <!-- Recommandation de films DEBUT -->
+        <article class="card poc">
+          <h3>Recommandation de films</h3>
+          <h4>Basé sur le jeu de donnés MovieLens de 335 MB.</h4>
+          <p>
+            Nettoyage et EDA avec PySpark et Matplotlib.<br>
+            Modelisation avec Spark MLlib (ALS, TF-IDF et KNN).<br>
+            <!-- Le dataset contient les informations suivantes :
+            1. ratings.csv : Les notes attribuées par les utilisateurs aux films.
+            ○ userId, movieId, rating, timestamp
+            2. movies.csv : Les métadonnées des films.
+            ○ movieId, title, genres
+            Déploiement avec FastAPI et Streamlit.<br>
+            ● Évaluez la précision et la couverture des recommandations.
+            ● Comparez les résultats des différentes approches.
+            ● Donnez des recommandations pour 3 à 5 utilisateurs fictifs.
+            ● Concluez sur la performance de vos différentes méthodes. -->
           </p>
-        </article>
+            <p>L'outil recommande 5 film selon l'utilisateur sélectionné.</p>
+            <p>Ce projet a été réalisé en équipe avec <a href="https://www.linkedin.com/in/sulivan-moreau/" target="_blank" rel="noopener noreferrer">Sulivan Moreau</a> et <a href="https://www.linkedin.com/in/ayoub-abderrahmane-026248283/" target="_blank" rel="noopener noreferrer">Ayoub Abderrahmane</a>.</p>
+            
+            <div class="btn-group">
+              <a class="btn" href="https://lab.zanza-creation.com/sparkle-movie/" target="_blank" rel="noopener">Interface utilisateur</a>
+              <a class="btn secondary" href="https://lab.zanza-creation.com/sparkle-movie/api/docs" target="_blank" rel="noopener">Docs API Backend</a>
+              <a class="btn secondary" href="https://github.com/bruno-coulet/sparkle-movie" target="_blank" rel="noopener">Code Source</a>
+              <a class="btn outline" href="https://canva.link/rsct1ta0anuawbt" target="_blank" rel="noopener">Slides Soutenance</a>
+            </div>
+            
+            <p class="small project-note">
+              <em>Note : Les slides accompagnent la soutenance orale.</em>
+            </p>
+          </article>
+          <!-- Recommandation de films FIN -->
 
-        <article class="card card-centered card-muted">
+        <article class="card poc card-centered card-muted">
           <h3>A venir</h3>
           <p>Recommandations avec pySpark<br>analyses NLP<br>classification d'images...<br>... en cours de préparation.</p>
         </article>
