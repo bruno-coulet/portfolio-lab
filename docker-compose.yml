@@ -1,19 +1,41 @@
 services:
   hub:
     image: nginx:alpine
-    container_name: portfolio-hub
+    container_name: portfolio
     restart: always
     volumes:
       - ./html:/usr/share/nginx/html:ro
-      # - ./img:/usr/share/nginx/html/img:ro
     networks:
-      - web
+      - traefik
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.hub.rule=Host(`lab.zanza-creation.com`) && PathPrefix(`/`)"
+      # On retire le PathPrefix pour ne garder que le Host
+      - "traefik.http.routers.hub.rule=Host(`lab.zanza-creation.com`)"
       - "traefik.http.routers.hub.entrypoints=websecure"
       - "traefik.http.routers.hub.tls.certresolver=myresolver"
 
 networks:
-  web:
+  traefik:
     external: true
+
+
+
+# services:
+#   hub:
+#     image: nginx:alpine
+#     container_name: portfolio-hub
+#     restart: always
+#     volumes:
+#       - ./html:/usr/share/nginx/html:ro
+#       # - ./img:/usr/share/nginx/html/img:ro
+#     networks:
+#       - web
+#     labels:
+#       - "traefik.enable=true"
+#       - "traefik.http.routers.hub.rule=Host(`lab.zanza-creation.com`) && PathPrefix(`/`)"
+#       - "traefik.http.routers.hub.entrypoints=websecure"
+#       - "traefik.http.routers.hub.tls.certresolver=myresolver"
+
+# networks:
+#   web:
+#     external: true
