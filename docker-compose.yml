@@ -13,6 +13,7 @@ services:
       - "traefik.http.routers.hub.rule=Host(`lab.zanza-creation.com`)"
       - "traefik.http.routers.hub.entrypoints=websecure"
       - "traefik.http.routers.hub.tls.certresolver=myresolver"
+      - "traefik.http.services.hub.loadbalancer.server.port=80"
 
 networks:
   traefik:
