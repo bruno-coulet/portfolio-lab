@@ -153,6 +153,8 @@ a:not(.btn):hover::after {
   flex-direction: column;
   gap: 12px;
   transition: transform 0.2s ease, border-color 0.2s ease;
+  height: 100%; 
+  box-sizing: border-box; /* Évite que le padding s'ajoute aux 100% */
 }
 
 .card:hover {
@@ -190,7 +192,7 @@ a:not(.btn):hover::after {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 a.btn {
